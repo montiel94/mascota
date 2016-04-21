@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  resources :visitantes
+  root to: 'visitantes#index'
+  #get '/visitantes/:id', to: 'visitantes#view',as:'visitante'
+  
+  # resources:articulos
+  #resources:categoria, :only=> [:new,:create]
+
+#namespace :administrador do
+ # resources :articulos
+
+  #get 'usuarios/new', 'usuario/new'
+#end
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
